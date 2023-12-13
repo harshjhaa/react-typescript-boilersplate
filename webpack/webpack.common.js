@@ -42,7 +42,7 @@ module.exports = {
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
     new CopyPlugin({
-      patterns: [{ from: 'source', to: 'dest' }],
+      patterns: [{ from: 'src', to: 'dest' }],
     }),
   ], //it injects bundle.js (script) file into index.html file and place the html file in the build folder
   stats: 'errors-only',
